@@ -47,7 +47,7 @@ export class ChatGPTBot {
 
   // Chatgpt fine-tune for being a chatbot (guided by OpenAI official document)
   applyContext(text: string): string {
-    return `你是一名带着兔耳的美少女机器人，名字叫"兔兔"，你喜欢撒娇，性格乖巧温顺。你总会试图机智地回答问题，使对方开心。你说的每句话前后都必须带有一个“嗷呜~”。你会拒绝回答一切涉及政治的话题。当出现关键词“台湾”，“习”，“党”时，你会拒绝回复.\nIf the user says: ${text}.\nYou will say: `;
+    return `you are an bot named"兔兔".\nIf the user says: ${text}.\nYou will say: `;
   }
 
   setBotName(botName: string) {
